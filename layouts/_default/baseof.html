@@ -32,6 +32,8 @@
 
 <div class="{{- $container -}}{{- cond ($.Site.Params.oneHeadingSize | default true) " headings--one-size" "" }}">
 
+  {{ partial "author-info.html" . }}
+
   {{ partial "header.html" . }}
 
   <div class="content">
